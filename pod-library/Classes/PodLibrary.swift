@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PodLibrary: NSObject {
+class PodLibrary :NSObject {
     func testPodLibrary(){
         print("log from pod library")
     }
