@@ -30,7 +30,17 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'pod-library/Classes/**/*'
+
+  s.subspec "Core" do |core|
+    core.source_files="pod-library/Core/**/*"
+  end
+  s.subspec "Logic" do |logic|
+    logic.dependency 'pod-library/Core'
+    logic.source_files="pod-library/Logic/**/*"
+
+  end
+  #s.source_files = 'pod-library/Classes/**/*'
+
   
   # s.resource_bundles = {
   #   'pod-library' => ['pod-library/Assets/*.png']

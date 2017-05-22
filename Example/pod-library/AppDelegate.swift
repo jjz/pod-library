@@ -15,12 +15,16 @@ import pod_library
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var podLibrary: PodLibrary?=PodLibrary()
-
+  //  var podLibrary: PodLibrary?=PodLibrary()
+    var core:Core?=Core()
+    var logic :Logic?=Logic()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        podLibrary!.testPodLibrary();
+    //    podLibrary!.testPodLibrary();
+        
+        core?.coreTest()
+        logic?.logicTest()
     
         return true
     }

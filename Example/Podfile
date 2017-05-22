@@ -1,7 +1,8 @@
 use_frameworks!
 
 target 'pod-library_Example' do
-  pod 'pod-library', :path => '../'
+    #pod 'pod-library/Core', :path => '../'
+  pod 'pod-library/Logic', :path => '../'
 
   target 'pod-library_Tests' do
     inherit! :search_paths

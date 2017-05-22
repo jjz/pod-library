@@ -11,14 +11,16 @@ PODS:
     - FBSnapshotTestCase (~> 2.0)
     - Nimble
     - Quick
-  - pod-library (0.1.0)
+  - pod-library/Core (0.1.0)
+  - pod-library/Logic (0.1.0):
+    - pod-library/Core
   - Quick (1.0.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
   - Nimble (~> 5.1.1)
   - Nimble-Snapshots
-  - pod-library (from `../`)
+  - pod-library/Logic (from `../`)
   - Quick (~> 1.0.0)
 
 EXTERNAL SOURCES:
@@ -29,9 +31,9 @@ SPEC CHECKSUMS:
   FBSnapshotTestCase: '094f9f314decbabe373b87cc339bea235a63e07a'
   Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
   Nimble-Snapshots: e743439f26c2fa99d8f7e0d7c01c99bcb40aa6f2
-  pod-library: d286d9f2db35f7a68d0bcd1725e58fb04432fbcd
+  pod-library: 38156fcfe903cb91ea85dfa1b0ae95faed151c97
   Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
 
-PODFILE CHECKSUM: dca011c51e39e0f4c53ec3bbaa5b87149b5facc8
+PODFILE CHECKSUM: 29c831a25e3961586e49bf2afc02ec0dfcb2a733
 
 COCOAPODS: 1.2.1
