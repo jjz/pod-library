@@ -8,8 +8,8 @@
 
 import Foundation
 
-class PodLibrary :NSObject {
-    func testPodLibrary(){
+public class PodLibrary :NSObject {
+    public func testPodLibrary(){
         print("log from pod library")
     }
 }

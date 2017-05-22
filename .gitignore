@@ -27,3 +27,4 @@ DerivedData
 Example/Pods
 .gitkeep
 Example/pod-library.xcworkspace/xcshareddata
+*.xcscmblueprint
